@@ -43,8 +43,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //Player input
-        x = Input.GetAxisRaw("Horizontal");
-        z = Input.GetAxisRaw("Vertical");
+        x = Input.GetAxis("Horizontal");
+        z = Input.GetAxis("Vertical");
 
         if (isGrounded)
             gravity = -19.62f; 

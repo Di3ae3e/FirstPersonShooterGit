@@ -59,10 +59,8 @@ public class Enemy : MonoBehaviour
                     if (hit.collider.gameObject.GetComponent<HpSystem>() != null)
                     {
                         HpSystem.TakeDamage(hit.collider.gameObject, weaponDamage);
-                        Debug.Log("target hit");
                     }
                     nextFire = Time.time + 1f / fireRate;
-                    Debug.Log(ammo + " left");
                     ammo--;
                 }
             }

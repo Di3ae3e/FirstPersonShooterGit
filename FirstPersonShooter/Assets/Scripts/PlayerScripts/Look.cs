@@ -7,6 +7,11 @@ public class Look : MonoBehaviour
     [HideInInspector]
     static public float xRotation = 0;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
     private void Update()
     {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensivity * Time.deltaTime;
